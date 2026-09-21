@@ -104,7 +104,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-lightcream py-12 px-4 relative overflow-hidden"
+      className="bg-lightcream py-10 px-4 relative overflow-hidden"
     >
       {/* Decorative Diya Animation */}
       <motion.img
@@ -128,7 +128,7 @@ export default function Contact() {
             Contact Us
           </p>
 
-          <h2 className="text-3xl md:text-5xl amita-bold text-darkbrown mt-4 leading-tight">
+          <h2 className="text-3xl md:text-4xl amita-bold text-darkbrown mt-4 leading-tight">
             आज ही अपनी पूजा और आध्यात्मिक सेवाएं बुक करें
           </h2>
 
@@ -238,7 +238,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-[#240a00] to-[#4a1d00] rounded-4xl p-6 md:p-10 text-cream shadow-2xl relative overflow-hidden"
+            className="bg-gradient-to-br from-[#59171B] to-[#8B3A47] rounded-4xl p-6 md:p-10 text-cream shadow-2xl relative overflow-hidden"
           >
             <div className="relative z-10">
               <p className="uppercase tracking-[4px] text-xs text-saffron font-bold">
@@ -258,7 +258,7 @@ export default function Contact() {
                       key={item.id}
                       className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-4 hover:bg-white/10 transition-all duration-300"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-saffron/20 flex items-center justify-center shrink-0">
+                      <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0">
                         <Icon className="text-saffron" size={20} />
                       </div>
 

@@ -66,10 +66,10 @@ const Service = () => {
   return (
     <section
       id="services"
-      className="bg-[#fffaf3] py-20 px-4 text-brown relative overflow-hidden"
+      className="bg-[#fffaf3] py-10 px-4 text-brown relative overflow-hidden"
     >
       <div className="text-center md:mt-9 mb-16 relative z-10">
-        <h2 className="text-3xl md:text-5xl amita-bold text-darkbrown font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl amita-bold text-darkbrown font-bold mb-4">
           पवित्र वैदिक अनुष्ठान एवं आध्यात्मिक समाधान
         </h2>
 
@@ -100,13 +100,18 @@ const Service = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" />
                 <img
                   src={service.imageUrl}
-                  alt={service.titleEnglish}
+                  
+                   alt={
+  service?.titleHindi && service?.titleEnglish
+    ? `${service?.titleHindi} - ${service?.titleEnglish} | Vedic Poojan`
+    : "Vedic Puja and Anushthan Service | Vedic Poojan"
+}
                   className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                   loading="lazy"
                 />
 
                 {/* Floating Icon Over Image */}
-                <div className="absolute top-4 right-4 z-20 bg-white/80 backdrop-blur-md w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-saffron">
+                <div className="absolute top-4 right-4 z-20 bg-white/80 backdrop-blur-md w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-darkbrown">
                   {Icon && <Icon size={22} className="text-brown group-hover:text-white transition-colors" />}
                 </div>
               </div>
@@ -114,6 +119,7 @@ const Service = () => {
               {/* Text Content */}
               <div className="p-7 flex-1 flex flex-col relative bg-lightcream">
                 <h3 className="text-xl font-bold mb-1 amita-bold text-saffron">
+                  
                   {service.titleHindi}
                 </h3>
                 <h4 className="text-sm font-medium amaranth-regular mb-3 text-darkbrown uppercase tracking-wider opacity-80">

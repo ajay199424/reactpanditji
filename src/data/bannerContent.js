@@ -10,7 +10,7 @@ export const bannerContent = {
   ctas: {
     primary: {
       label: "Call for Consultation",
-      link: "tel:+911234567890",
+      link: "tel:+917828318208 ",
     },
     secondary: {
       label: "View All Pujas",
@@ -20,7 +20,7 @@ export const bannerContent = {
 
   // Social Media Links
   socials: {
-    whatsapp: "https://wa.me/+919589547529?text=Namaste, I need spiritual guidance.",
+    whatsapp: "https://wa.me/+917828318208 ?text=Namaste, I need spiritual guidance.",
     instagram: "https://www.instagram.com/ubyd_pathan08/",
   },
 

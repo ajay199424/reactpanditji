@@ -8,10 +8,10 @@ export const contactFormFields = [
 ];
 
 const defaultContactConfig = {
-  phone: "+91 9589547529",
-  whatsapp: "919589547529", // बिना '+' के व्हाट्सएप लिंक के लिए बेहतर
+  phone: "+917828318208 ",
+  whatsapp: "917828318208 ", // बिना '+' के व्हाट्सएप लिंक के लिए बेहतर
   email: "vedicservices@gmail.com",
-  location: "इन्दौर, मध्य प्रदेश, भारत",
+  location: "उज्जैन, मध्य प्रदेश, भारत",
   timing: "सोमवार से रविवार (सप्ताह के सभी दिन)"
 };
 

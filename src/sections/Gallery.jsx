@@ -37,7 +37,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id='gallery' className="bg-lightcream text-center py-20 px-4 relative overflow-hidden">
+    <section id='gallery' className="bg-lightcream text-center py-10 px-4 relative overflow-hidden">
       {/* Background Decorative Eyes */}
       <motion.img
         src={eyes}
@@ -59,7 +59,7 @@ export default function Gallery() {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl mb-5 amaranth-bold md:text-5xl font-bold text-darkbrown mt-3"
+            className="text-3xl mb-5 amaranth-bold md:text-4xl font-bold text-darkbrown mt-3"
           >
             {sectionTitle}
           </motion.h2>
@@ -86,7 +86,12 @@ export default function Gallery() {
             >
               <img
                 src={img.image}
-                alt={`Gallery image ${index}`}
+                
+                alt={
+    img?.title
+      ? `${img?.title} | Vedic Poojan`
+      : `Vedic Puja and Anushthan Ritual - Vedic Poojan`
+  }
                 loading="lazy"
                 className="w-full object-cover aspect-4/3 transition duration-700 group-hover:scale-110"
               />

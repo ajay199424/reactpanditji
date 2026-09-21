@@ -7,7 +7,7 @@ const defaultFooterData = {
   socialLinks: [
     { name: "Instagram", link: "https://instagram.com", icon: "faInstagram" },
     { name: "Facebook", link: "https://facebook.com", icon: "faFacebook" },
-    { name: "WhatsApp", link: "https://wa.me/919876543210", icon: "faMessage" },
+    { name: "WhatsApp", link: "https://wa.me/917828318208", icon: "faMessage" },
     { name: "YouTube", link: "https://youtube.com", icon: "faYoutube" },
   ]
 };

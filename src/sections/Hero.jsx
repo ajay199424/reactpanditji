@@ -49,7 +49,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="bg-darkbrown overflow-hidden w-full min-h-screen relative flex flex-col justify-between"
+        className=" overflow-hidden w-full min-h-screen relative flex flex-col justify-between"
       >
         <NavBar />
         {/* BACKGROUND SWIPER LAYER */}
@@ -69,12 +69,12 @@ const Hero = () => {
           >
             {displayImages.map((img, index) => (
               <SwiperSlide key={index}>
-                <div className="w-full h-full bg-darkbrown relative">
+                <div className="w-full h-full  relative">
                   <div
-                    className="w-full opacity-15 h-screen bg-cover bg-center"
+                    className="w-full  h-screen bg-cover bg-center"
                     style={{ backgroundImage: `url(${img})` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-darkbrown/80 via-transparent to-darkbrown" />
+                  <div className="absolute inset-0  from-darkbrown/80 via-transparent to-darkbrown" />
                 </div>
               </SwiperSlide>
             ))}
@@ -93,20 +93,27 @@ const Hero = () => {
                 {content.topTag && (
                   <div className="inline-flex items-center gap-2 bg-cream/10 border border-lightcream/30 px-4 py-1.5 rounded-full mb-4 md:mb-6 mx-auto backdrop-blur-xs">
                     <span className="w-1.5 h-1.5 rounded-full bg-saffron animate-pulse" />
-                    <span className="md:text-[11px] text-[8px] text-lightcream font-semibold tracking-[2px] uppercase">
+                    <span className="md:text-[11px] text-[8px] text-white font-semibold tracking-[2px] uppercase">
                       {content.topTag}
                     </span>
                   </div>
                 )}
+<h1 className="amita-bold text-3xl md:text-4xl mb-2 text-white drop-shadow-md">
+  {content.mainHeading}
+</h1>
 
-                <h1 className="amita-bold text-5xl md:text-6xl mb-2 text-orange-200 drop-shadow-md">
+<h2 className="amita-regular text-3xl md:text-4xl text-white drop-shadow-md">
+  {content.subHeading}
+</h2>
+                {/* <h1 className="amita-bold text-5xl md:text-6xl mb-2 text-orange-200 drop-shadow-md">
                   {content.mainHeading}
                 </h1>
                 <h1 className="amita-regular text-3xl md:text-5xl text-cream drop-shadow-md">
                   {content.subHeading}
-                </h1>
+                </h1> */}
+                
 
-                <p className="be-vietnam-pro-regular px-3 md:px-8 mt-3 md:mt-6 text-sm md:text-base text-cream/80 leading-relaxed max-w-3xl mx-auto">
+                <p className="be-vietnam-pro-regular px-3 md:px-8 mt-3 md:mt-6 text-sm md:text-base text-white leading-relaxed max-w-3xl mx-auto">
                   {content.description}
                 </p>
               </motion.div>
@@ -119,15 +126,15 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2 }}
-                  className="w-full bg-gradient-to-b from-darkbrown/90 to-[#1e0800]/95 border border-saffron/30 rounded-[0.5rem] p-2 md:p-2 shadow-2xl backdrop-blur-md relative overflow-hidden"
+                  className="w-full bg-gradient-to-b from-darkbrown/90 to-[#C44E61]/95 border border-saffron/30 rounded-[0.5rem] p-2 md:p-2 shadow-2xl backdrop-blur-md relative overflow-hidden"
                 >
                   <div className="relative z-10 m-4 flex flex-col items-center">
                     <div className="flex flex-col gap-3 md:gap-5 w-full md:flex-row justify-center items-center">
                       <div className="text-center md:text-left flex-1">
-                        <h3 className="text-xl md:text-3xl amita-bold text-cream mb-0">
+                        <h3 className="text-xl md:text-3xl amita-bold text-white mb-0">
                           {content.problemBanner.question}
                         </h3>
-                        <h4 className="text-sm md:text-xl font-semibold text-saffron tracking-wide mb-0 amaranth-regular">
+                        <h4 className="text-sm md:text-xl font-semibold text-white tracking-wide mb-0 amaranth-regular">
                           {content.problemBanner.solution}
                         </h4>
                       </div>
@@ -170,7 +177,7 @@ const Hero = () => {
           className="w-[80vh] h-[80vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-5 opacity-25 object-contain pointer-events-none select-none"
         />{" "}
 
-      </section>        <div className="w-full bg-gradient-to-r from-[#240a00] via-[#3b1400] to-[#240a00] border-y border-white/10 py-3.5 px-4 md:px-12 flex flex-col md:flex-row items-center justify-center gap-4 shadow-xl relative z-30">
+      </section>        <div className="w-full bg-gradient-to-r from-[#59171B] via-[#8B3A47] to-[#C44E61] border-y border-white/10 py-3.5 px-4 md:px-12 flex flex-col md:flex-row items-center justify-center gap-4 shadow-xl relative z-30">
           {/* Actionable Clean Responsive Grid Link System */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
             {/* Direct Phone Link */}

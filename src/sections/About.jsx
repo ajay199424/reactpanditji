@@ -34,7 +34,7 @@ export default function About() {
   if (!aboutData) return null;
 
   return (
-    <section id="about" className="bg-lightcream py-24 px-4 overflow-hidden">
+    <section id="about" className="bg-lightcream py-10 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-14 justify-center items-center">
           
@@ -49,7 +49,7 @@ export default function About() {
             <div className="overflow-hidden rounded-4xl shadow-2xl border border-brown/10 aspect-2/3 h-auto flex-wrap bg-brown/5">
               <img
                 src={aboutData.image}
-                alt="Pandit Ji Profile"
+                alt="Pandit Ji - Vedic Pooja and Anushthan Services | Vedic Poojan"
                 className="w-full h-full object-cover transition-all duration-700"
               />
             </div>
@@ -81,7 +81,7 @@ export default function About() {
             <p className="text-saffron max-md:text-center amaranth-bold uppercase tracking-[4px] font-medium">
               {aboutData.topTag}
             </p>
-            <h2 className="text-3xl md:text-5xl max-md:text-center amita-bold leading-tight text-darkbrown mt-4">
+            <h2 className="text-3xl md:text-4xl max-md:text-center amita-bold leading-tight text-darkbrown mt-4">
               {aboutData.mainHeading}
             </h2>
             
@@ -119,7 +119,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-24 bg-gradient-to-r from-darkbrown to-[#4a1d00] rounded-4xl p-10 md:p-16 text-center relative overflow-hidden"
+          className="mt-24 bg-gradient-to-r from-darkbrown to-[#8B3A47] rounded-4xl p-10 md:p-16 text-center relative overflow-hidden"
         >
           {/* Subtle pattern overlay */}
           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] pointer-events-none" />

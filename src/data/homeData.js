@@ -24,14 +24,14 @@ export const bannerContent = {
       link: "#services",
     },
     secondary: {
-      label: "Call Now at +919876543210",
-      link: "tel:+911234567890", // यहाँ अपना असली फ़ोन नंबर डालें
+      label: "Call Now at +917828318208",
+      link: "tel:+917828318208", // यहाँ अपना असली फ़ोन नंबर डालें
     },
   },
 
   // सोशल मीडिया लिंक्स (स्ट्रिप और फ़ुटर के लिए)
   socials: {
-    whatsapp: "https://wa.me/911234567890", // यहाँ अपना असली व्हाट्सएप लिंक डालें
+    whatsapp: "https://wa.me/917828318208", // यहाँ अपना असली व्हाट्सएप लिंक डालें
     instagram: "https://instagram.com/your_profile", // यहाँ अपना इंस्टाग्राम हैंडल डालें
   },
 

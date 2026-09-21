@@ -1,11 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+const [scrolled, setScrolled] = useState(false);
+
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
 
   return (
-    <nav className="text-white bg-darkbrown/70 w-full fixed z-20 top-0">
+    <nav
+  className={`text-white w-full fixed z-20 top-0 transition-all duration-300 ${
+    scrolled ? "bg-darkbrown/80" : "bg-darkbrown/20"
+  }`}
+>
+     {/* <nav className="text-white bg-darkbrown/20 w-full fixed z-20 top-0"> */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16  ">
           <a href="#home" className="text-2xl amaranth-regular font-bold">
@@ -23,7 +41,7 @@ const Navbar = () => {
             >
               ॐ
             </motion.span>{" "}
-            Pandit Ji
+            Vedic Poojan
           </a>
 
           <div className="hidden md:flex space-x-6 ">

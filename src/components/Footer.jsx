@@ -53,7 +53,7 @@ export default function Footer() {
   // जब तक डेटा सिंक हो रहा हो, एक प्रोफेशनल मिनिमल लोडर दिखेगा (लेआउट जर्क रोकने के लिए)
   if (isLoading || !liveData) {
     return (
-      <footer className="bg-[#1b0700] py-16 text-center text-[#f3d9b1] text-sm flex flex-col items-center justify-center gap-3 border-t border-saffron/10">
+      <footer className="bg-[#1b0700] py-10 text-center text-[#f3d9b1] text-sm flex flex-col items-center justify-center gap-3 border-t border-saffron/10">
         <Loader2 className="animate-spin text-saffron" size={24} />
         <p className="tracking-widest text-[11px] uppercase font-bold opacity-60">वैदिक डेटा सिंक हो रहा है...</p>
       </footer>
@@ -61,7 +61,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative pt-10 overflow-hidden bg-linear-to-b from-[#240a00] via-[#1b0700] to-black text-cream border-t border-saffron/10">
+    <footer className="relative pt-10 overflow-hidden bg-linear-to-b from-[#59171B] via-[#8B3A47] to-[#59171B] text-cream border-t border-saffron/10">
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
 
@@ -88,8 +88,10 @@ export default function Footer() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold amaranth-bold">Pandit Ji</h2>
-                <p className="text-[#f3d9b1] text-sm tracking-wide">Vedic Services</p>
+                <p className="text-2xl font-bold amaranth-bold">
+  Vedic Poojan
+</p>
+                <p className="text-[#f3d9b1] text-sm tracking-wide">Vedic Puja & Anushthan Services</p>
               </div>
             </div>
 
@@ -109,23 +111,23 @@ export default function Footer() {
           </div>
 
           {/* COLUMN 2: QUICK NAVIGATION LINKS (Static Routing) */}
-          <div>
-            <h3 className="text-xl font-semibold text-cream amita-regular border-b border-white/5 pb-2 w-fit pr-6">
-              त्वरित लिंक्स
-            </h3>
+         <nav aria-label="Footer navigation">
+  <h3 className="text-xl font-semibold text-cream amita-regular border-b border-white/5 pb-2 w-fit pr-6">
+    त्वरित लिंक्स
+  </h3>
 
-            <div className="flex flex-col gap-4 mt-6">
-              {footerLinks.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.path}
-                  className="text-[#f3d9b1] hover:text-saffron transition-all duration-300 relative w-fit text-sm md:text-base after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-saffron hover:after:w-full after:transition-all after:duration-500"
-                >
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          </div>
+  <div className="flex flex-col gap-4 mt-6">
+    {footerLinks.map((item, index) => (
+      <a
+        key={index}
+        href={item.path}
+        className="text-[#f3d9b1] hover:text-saffron transition-all duration-300 relative w-fit text-sm md:text-base after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-saffron hover:after:w-full after:transition-all after:duration-500"
+      >
+        {item.title}
+      </a>
+    ))}
+  </div>
+</nav>
 
           {/* COLUMN 3: SPIRITUAL SERVICES LIST (Static Domain Array) */}
           <div>
@@ -169,6 +171,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title={item.name}
+                    aria-label={`Follow Vedic Poojan on ${item.name}`}
                     className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 hover:border-saffron/40 hover:bg-saffron/10 transition-all duration-500 hover:-translate-y-1 flex items-center justify-center group"
                   >
                     {icon && (

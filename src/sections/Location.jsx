@@ -66,7 +66,7 @@ export default function LocationSection() {
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl amita-bold sm:text-4xl md:text-5xl font-bold text-darkbrown leading-tight mt-4"
+            className="text-3xl amita-bold sm:text-4xl md:text-4xl font-bold text-darkbrown leading-tight mt-4"
           >
             {liveLocationData.mainHeading}
           </motion.h2>
@@ -101,7 +101,7 @@ export default function LocationSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full rounded-[2.5rem] grayscale hover:grayscale-0 transition-all duration-700"
-              title="Service Location Map"
+              title="Vedic Poojan Location and Service Area Map"
             ></iframe>
 
             {/* Dark Overlay vignette gradient at the bottom */}

@@ -44,26 +44,26 @@ export const VideoSection = () => {
   }, []);
 
   return (
-    <section id="videos" className="bg-lightcream py-20 px-4 md:px-10 min-h-[400px]">
+    <section id="videos" className="bg-lightcream py-10 px-4 md:px-10 min-h-[400px]">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <motion.h1 
+          <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl mb-5 amaranth-bold md:text-5xl font-bold text-darkbrown mt-3"
+            className="text-3xl mb-5 amaranth-bold md:text-4xl font-bold text-darkbrown mt-3"
           >
             {content.sectionTitle}
-          </motion.h1>
-          <motion.h2 
+          </motion.h2>
+          <motion.p 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="text-brown text-center be-vietnam-pro max-w-2xl mx-auto"
           >
             {content.sectionSubtitle}
-          </motion.h2>
+          </motion.p>
         </div>
 
         {/* Video Grid */}
@@ -84,7 +84,11 @@ export const VideoSection = () => {
               >
                 <img 
                   src={video.thumbnail} 
-                  alt={video.title} 
+                  alt={
+    video?.title
+      ? `${video?.title} | Vedic Poojan`
+      : "Vedic Puja and Anushthan Video | Vedic Poojan"
+  }
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />

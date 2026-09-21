@@ -35,7 +35,7 @@ export default function Review() {
   }, []);
 
   return (
-    <section id='reviews' className="bg-lightcream py-16 md:py-24 px-4 overflow-hidden relative">
+    <section id='reviews' className="bg-lightcream py-10 md:py-24 px-4 overflow-hidden relative">
       {/* Background Animated 'Om' Icon */}
       <motion.div
         animate={{
@@ -54,7 +54,7 @@ export default function Review() {
           <p className="text-saffron uppercase tracking-[4px] text-sm md:text-base font-medium">
             हमारी आध्यात्मिक सेवाओं पर भक्तों का अटूट विश्वास
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl amita-bold font-bold text-darkbrown leading-tight mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl amita-bold font-bold text-darkbrown leading-tight mt-4">
             हर परिवार में सुख, शांति, सकारात्मकता और ईश्वरीय आशीर्वाद का संचार
           </h2>
         </div>
@@ -79,8 +79,8 @@ export default function Review() {
                   whileHover={{ y: -6 }}
                   className="backdrop-blur-xl bg-white/40 border border-white/30 rounded-xl p-5 md:p-7 shadow-xl hover:shadow-2xl transition-all duration-500"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-saffron/15 flex items-center justify-center">
-                    <Icon className="text-saffron" size={22} />
+                  <div className="w-12 h-12 rounded-xl bg-darkbrown flex items-center justify-center">
+                    <Icon className="text-white" size={22} />
                   </div>
                   <h3 className="text-3xl md:text-4xl font-bold text-darkbrown mt-6">{item.number}</h3>
                   <h4 className="text-lg md:text-xl font-semibold text-darkbrown mt-3">{item.title}</h4>
@@ -94,7 +94,7 @@ export default function Review() {
         {/* --- REVIEWS SECTION --- */}
         <div className="mt-24">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl amita-bold font-bold text-darkbrown leading-tight">परिवारों और श्रद्धालुओं का अटूट विश्वास</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-4xl amita-bold font-bold text-darkbrown leading-tight">परिवारों और श्रद्धालुओं का अटूट विश्वास</h2>
             <p className="text-sm sm:text-md md:text-lg text-brown leading-relaxed mt-6">उन परिवारों और भक्तों के वास्तविक अनुभव...</p>
           </div>
 
@@ -115,15 +115,15 @@ export default function Review() {
                   whileHover={{ y: -5 }}
                   className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-4xl p-5 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-saffron/15 flex items-center justify-center">
-                    <Quote className="text-saffron" size={22} />
+                  <div className="w-12 h-12 rounded-2xl bg-darkbrown flex items-center justify-center">
+                    <Quote className="text-white" size={22} />
                   </div>
 
-                  <div className="flex gap-1 mt-4">
+                  {/* <div className="flex gap-1 mt-4">
                     {[...Array(item.rating || 5)].map((_, i) => (
                       <Star key={i} size={18} className="fill-saffron text-saffron" />
                     ))}
-                  </div>
+                  </div> */}
 
                   <p className="text-brown text-sm md:text-md leading-relaxed mt-4 italic">"{item.review}"</p>
                   <div className="mt-6 border-t border-saffron/10 pt-4">
@@ -142,10 +142,10 @@ export default function Review() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="mt-18 bg-gradient-to-r from-[#240a00] to-[#4a1d00] rounded-4xl p-6 md:p-12 text-center shadow-2xl"
+            className="mt-18 bg-gradient-to-r from-[#59171B] to-[#8B3A47] rounded-4xl p-6 md:p-12 text-center shadow-2xl"
           >
-            <Quote className="text-saffron mx-auto opacity-50" size={40} />
-            <p className="text-xl md:text-3xl amita-bold leading-relaxed font-semibold text-cream mt-4 max-w-4xl mx-auto">
+            <Quote className="text-white mx-auto " size={40} />
+            <p className="text-xl md:text-3xl amita-bold leading-relaxed font-semibold text-white mt-4 max-w-4xl mx-auto">
               “श्रद्धा और भक्ति मिलकर जीवन में शांति, सकारात्मकता और दिव्य आशीर्वाद का सृजन करते हैं।”
             </p>
           </motion.div>
