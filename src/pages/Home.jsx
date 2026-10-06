@@ -10,7 +10,7 @@ import Contact from "../sections/Contact";
 import Review from "../sections/Review";
 import Footer from "../components/Footer";
 import LocationSection from "../sections/Location";
-
+  
 const Home = () => {
   const structuredData = {
   "@context": "https://schema.org",
@@ -63,19 +63,18 @@ const Home = () => {
     <>
       <Helmet>
   {/* Primary SEO */}
+ 
   <title>
-    Vedic Pooja & Anushthan in Ujjain | Kaal Sarp Puja, Rudrabhishek & Vedic Services
-  </title>
+  Vedic Poojan Ujjain | Mangal Bhat Puja & Kaal Sarp Dosh Puja
+</title>
 
+  
   <meta
-    name="description"
-    content="Vedic Pooja and Anushthan services in Ujjain, Madhya Pradesh including Kaal Sarp Dosh Nivaran Puja, Rudrabhishek, Mangal Bhat Puja, Navgraha Shanti, Vastu Shanti and other traditional Vedic rituals."
-  />
+  name="description"
+  content="Vedic Poojan in Ujjain offers Mangal Bhat Puja, Kaal Sarp Dosh Nivaran Puja, Rudrabhishek, Navgrah Shanti, Vastu Shanti and other traditional Vedic rituals."
+/>
 
-  <meta
-    name="keywords"
-    content="Vedic Pooja Ujjain, Vedic Puja Ujjain, Vedic Anushthan Ujjain, Puja Services Ujjain, Kaal Sarp Puja Ujjain, Kaal Sarp Dosh Nivaran Ujjain, Kalsarp Dosh Puja, Mangal Bhat Puja Ujjain, Rudrabhishek Ujjain, Maha Rudrabhishek Ujjain, Navgraha Shanti Puja Ujjain, Vivah Yog Shanti Puja, Santan Badha Nivaran, Durga Saptashati Path Ujjain, Yagya Anushthan Ujjain, Vastu Shanti Puja Ujjain, Vedic Mantra, धार्मिक पूजा, वैदिक अनुष्ठान, कालसर्प दोष निवारण, मंगल भात पूजा, रुद्राभिषेक, नवग्रह शांति पूजा, वास्तु शांति पूजा"
-  />
+  
 
   <link
     rel="canonical"
