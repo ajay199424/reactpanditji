@@ -102,7 +102,7 @@ const Hero = () => {
   {content.mainHeading}
 </h1>
 
-<h2 className="amita-regular text-3xl md:text-4xl text-white drop-shadow-md">
+<h2 className="amita-regular text-xl md:text-4xl text-white drop-shadow-md">
   {content.subHeading}
 </h2>
                 {/* <h1 className="amita-bold text-5xl md:text-6xl mb-2 text-orange-200 drop-shadow-md">
@@ -131,7 +131,7 @@ const Hero = () => {
                   <div className="relative z-10 m-4 flex flex-col items-center">
                     <div className="flex flex-col gap-3 md:gap-5 w-full md:flex-row justify-center items-center">
                       <div className="text-center md:text-left flex-1">
-                        <h3 className="text-xl md:text-3xl amita-bold text-white mb-0">
+                        <h3 className="text-lg md:text-3xl amita-bold text-white mb-0">
                           {content.problemBanner.question}
                         </h3>
                         <h4 className="text-sm md:text-xl font-semibold text-white tracking-wide mb-0 amaranth-regular">

@@ -89,7 +89,7 @@ export default function LocationSection() {
           viewport={{ once: true }}
           className="relative mt-16"
         >
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white shadow-2xl group">
+          <div className="relative overflow-hidden rounded-[1.5rem] border border-white shadow-2xl group">
 
             {/* IFRAME: Background pointer-events-none removed to allow map interaction */}
             <iframe
@@ -100,7 +100,7 @@ export default function LocationSection() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="w-full rounded-[2.5rem] grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full rounded-[1.5rem] grayscale hover:grayscale-0 transition-all duration-700"
               title="Vedic Poojan Location and Service Area Map"
             ></iframe>
 
@@ -113,7 +113,7 @@ export default function LocationSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:max-w-md backdrop-blur-xl bg-white/10 border border-white/20 rounded-4xl p-5 md:p-8 shadow-2xl"
+              className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:max-w-md backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-5 md:p-8 shadow-2xl"
             >
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-full bg-saffron/20 flex items-center justify-center">

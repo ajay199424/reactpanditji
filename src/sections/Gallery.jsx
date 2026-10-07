@@ -82,7 +82,7 @@ export default function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: (index % 10) * 0.05 }}
               viewport={{ once: true }}
-              className="break-inside-avoid mb-5 overflow-hidden rounded-3xl group relative cursor-pointer"
+              className="break-inside-avoid mb-5 overflow-hidden rounded-2xl group relative cursor-pointer"
             >
               <img
                 src={img.image}

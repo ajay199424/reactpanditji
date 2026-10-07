@@ -46,7 +46,7 @@ export default function About() {
             viewport={{ once: true }}
             className="relative aspect-2/3 max-w-xl max-md:order-2 w-full"
           >
-            <div className="overflow-hidden rounded-4xl shadow-2xl border border-brown/10 aspect-2/3 h-auto flex-wrap bg-brown/5">
+            <div className="overflow-hidden rounded-2xl shadow-2xl border border-brown/10 aspect-2/3 h-auto flex-wrap bg-brown/5">
               <img
                 src={aboutData.image}
                 alt="Pandit Ji - Vedic Pooja and Anushthan Services | Vedic Poojan"
@@ -119,7 +119,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-24 bg-gradient-to-r from-darkbrown to-[#8B3A47] rounded-4xl p-10 md:p-16 text-center relative overflow-hidden"
+          className="mt-24 bg-gradient-to-r from-darkbrown to-[#8B3A47] rounded-2xl p-10 md:p-16 text-center relative overflow-hidden"
         >
           {/* Subtle pattern overlay */}
           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/arabesque.png')] pointer-events-none" />

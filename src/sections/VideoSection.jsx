@@ -79,7 +79,7 @@ export const VideoSection = () => {
             >
               {/* Thumbnail Container */}
               <div 
-                className="relative h-64 overflow-hidden rounded-[2rem] cursor-pointer shadow-lg border border-saffron/10 bg-darkbrown/5"
+                className="relative h-64 overflow-hidden rounded-[1rem] cursor-pointer shadow-lg border border-saffron/10 bg-darkbrown/5"
                 onClick={() => setSelectedVideo(video.videoUrl)}
               >
                 <img 

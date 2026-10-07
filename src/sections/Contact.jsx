@@ -145,7 +145,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="backdrop-blur-xl bg-white/40 border border-white/30 shadow-2xl rounded-4xl p-5 md:p-10"
+            className="backdrop-blur-xl bg-white/40 border border-white/30 shadow-2xl rounded-2xl p-5 md:p-10"
           >
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
@@ -238,7 +238,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-[#59171B] to-[#8B3A47] rounded-4xl p-6 md:p-10 text-cream shadow-2xl relative overflow-hidden"
+            className="bg-gradient-to-br from-[#59171B] to-[#8B3A47] rounded-2xl p-6 md:p-10 text-cream shadow-2xl relative overflow-hidden"
           >
             <div className="relative z-10">
               <p className="uppercase tracking-[4px] text-xs text-saffron font-bold">

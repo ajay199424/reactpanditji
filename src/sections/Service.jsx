@@ -78,7 +78,7 @@ const Service = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 relative z-10">
+      <div className="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4 relative z-10">
         {/* map using the state variable servicesData */}
         {servicesData.map((service, index) => {
           const Icon = iconMap[service.icon] || Sparkles; // Fallback icon if not found
@@ -93,7 +93,7 @@ const Service = () => {
                 delay: index * 0.05,
               }}
               viewport={{ once: true }}
-              className="group flex flex-col rounded-[2rem] border border-saffron/20 bg-lightcream overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="group flex flex-col rounded-[1rem] border border-saffron/20 bg-lightcream overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
               {/* Image Container with Hover Zoom Effect */}
               <div className="relative h-56 overflow-hidden">
@@ -117,8 +117,8 @@ const Service = () => {
               </div>
 
               {/* Text Content */}
-              <div className="p-7 flex-1 flex flex-col relative bg-lightcream">
-                <h3 className="text-xl font-bold mb-1 amita-bold text-saffron">
+              <div className="p-4 flex-1 flex flex-col relative bg-lightcream">
+                <h3 className="text-lg font-bold mb-1 amita-bold text-saffron">
                   
                   {service.titleHindi}
                 </h3>

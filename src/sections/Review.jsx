@@ -102,7 +102,7 @@ export default function Review() {
             {loading ? (
               // Loading State for Reviews
               [...Array(2)].map((_, i) => (
-                <div key={i} className="h-64 bg-white/20 animate-pulse rounded-4xl border border-white/30" />
+                <div key={i} className="h-64 bg-white/20 animate-pulse rounded-2xl border border-white/30" />
               ))
             ) : (
               liveData.reviews.map((item, index) => (
@@ -113,7 +113,7 @@ export default function Review() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ y: -5 }}
-                  className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-4xl p-5 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500"
+                  className="bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-5 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-500"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-darkbrown flex items-center justify-center">
                     <Quote className="text-white" size={22} />
@@ -142,7 +142,7 @@ export default function Review() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="mt-18 bg-gradient-to-r from-[#59171B] to-[#8B3A47] rounded-4xl p-6 md:p-12 text-center shadow-2xl"
+            className="mt-18 bg-gradient-to-r from-[#59171B] to-[#8B3A47] rounded-2xl p-6 md:p-12 text-center shadow-2xl"
           >
             <Quote className="text-white mx-auto " size={40} />
             <p className="text-xl md:text-3xl amita-bold leading-relaxed font-semibold text-white mt-4 max-w-4xl mx-auto">
