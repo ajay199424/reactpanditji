@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"; // Added useState & useEffect
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { getServicePath } from "../seo/site.js";
 
 // Replace this path with your actual image path
 import swastik from "../assets/images/services/swastik.svg";
@@ -82,19 +84,9 @@ const Service = () => {
         {/* map using the state variable servicesData */}
         {servicesData.map((service, index) => {
           const Icon = iconMap[service.icon] || Sparkles; // Fallback icon if not found
-
-          return (
-            <motion.div
-              key={service.id || index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.05,
-              }}
-              viewport={{ once: true }}
-              className="group flex flex-col rounded-[1rem] border border-saffron/20 bg-lightcream overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
+          const servicePath = getServicePath(service);
+          const card = (
+            <>
               {/* Image Container with Hover Zoom Effect */}
               <div className="relative h-56 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" />
@@ -128,7 +120,34 @@ const Service = () => {
                 <p className="text-brown/70 be-vietnam-pro-regular leading-relaxed text-sm flex-1">
                   {service.description}
                 </p>
+                {servicePath ? (
+                  <span className="mt-4 inline-flex text-sm font-semibold text-saffron">
+                    पूरा विवरण देखें
+                  </span>
+                ) : null}
               </div>
+            </>
+          );
+
+          return (
+            <motion.div
+              key={service.id || index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.05,
+              }}
+              viewport={{ once: true }}
+              className="group flex flex-col rounded-[1rem] border border-saffron/20 bg-lightcream overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            >
+              {servicePath ? (
+                <Link to={servicePath} className="flex h-full flex-col">
+                  {card}
+                </Link>
+              ) : (
+                card
+              )}
             </motion.div>
           );
         })}

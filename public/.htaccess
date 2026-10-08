@@ -2,6 +2,9 @@
     RewriteEngine On
     RewriteBase /
 
+    RewriteRule ^mangal-bhat-puja/?$ /mangal-bhat-puja.html [L]
+    RewriteRule ^kaal-sarp-dosh-puja/?$ /kaal-sarp-dosh-puja.html [L]
+
     RewriteRule ^index\.html$ - [L]
 
     RewriteCond %{REQUEST_FILENAME} !-f

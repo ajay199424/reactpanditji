@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   LayoutDashboard, Sparkles, Video, Image, UserCheck, 
@@ -82,19 +83,47 @@ useEffect(() => {
 
   const currentSection = menuItems.find(item => item.id === activeTab);
 
-  if (authLoading) return <div className="min-h-screen bg-[#fffbf7] flex items-center justify-center">सिस्टम लोड हो रहा है...</div>;
+  if (authLoading) {
+    return (
+      <>
+        <Helmet>
+          <meta name="robots" content="noindex, nofollow" />
+          <title>Admin | Vedic Poojan</title>
+        </Helmet>
+        <div className="min-h-screen bg-[#fffbf7] flex items-center justify-center">सिस्टम लोड हो रहा है...</div>
+      </>
+    );
+  }
 
   if (!isAuthenticated) {
-    return <AdminLogin setAuthStatus={setIsAuthenticated}
-    triggerNotification={triggerNotification}
-      handleLogin={handleLogin} username={username} setUsername={setUsername}
-      password={password} setPassword={setPassword} showPassword={showPassword}
-      setShowPassword={setShowPassword} authError={authError}
-    />;
+    return (
+      <>
+        <Helmet>
+          <meta name="robots" content="noindex, nofollow" />
+          <title>Admin | Vedic Poojan</title>
+        </Helmet>
+        <AdminLogin
+          setAuthStatus={setIsAuthenticated}
+          triggerNotification={triggerNotification}
+          handleLogin={handleLogin}
+          username={username}
+          setUsername={setUsername}
+          password={password}
+          setPassword={setPassword}
+          showPassword={showPassword}
+          setShowPassword={setShowPassword}
+          authError={authError}
+        />
+      </>
+    );
   }
 
   return (
     <div className="min-h-screen z-50 bg-[#fffbf7] flex font-sans">
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Admin | Vedic Poojan</title>
+      </Helmet>
       <AnimatePresence>
         {successMessage && (
           <motion.div initial={{ opacity: 0, y: -20, x: "-50%" }} animate={{ opacity: 1, y: 0, x: "-50%" }} exit={{ opacity: 0, y: -20, x: "-50%" }}

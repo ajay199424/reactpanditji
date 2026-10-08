@@ -14,20 +14,23 @@ const defaultFooterData = {
 
 // ये स्टैटिक लिंक्स और सर्विसेज हैं (इन्हें आप चाहें तो ऐसे ही रख सकते हैं)
 export const footerLinks = [
-  { title: "Home", path: "#home" },
-  { title: "Services", path: "#services" },
-  { title: "Gallery", path: "#gallery" },
-  { title: "About Us", path: "#about" },
-  { title: "Contact", path: "#contact" },
-  { title: "Location", path: "#location" },
+  { title: "Home", path: "/" },
+  { title: "Services", path: "/#services" },
+  { title: "Mangal Bhat Puja", path: "/mangal-bhat-puja" },
+  { title: "Kaal Sarp Dosh Puja", path: "/kaal-sarp-dosh-puja" },
+  { title: "Gallery", path: "/#gallery" },
+  { title: "About Us", path: "/#about" },
+  { title: "Contact", path: "/#contact" },
+  { title: "Location", path: "/#location" },
 ];
 
 export const footerServices = [
-  "महा रुद्राभिषेक",
-  "नवग्रह शांति पूजा",
-  "वास्तु शांति अनुष्ठान",
-  "श्री दुर्गा सप्तशती पाठ",
-  "कालसर्प दोष निवारण",
+  { title: "महा रुद्राभिषेक" },
+  { title: "नवग्रह शांति पूजा" },
+  { title: "वास्तु शांति अनुष्ठान" },
+  { title: "श्री दुर्गा सप्तशती पाठ" },
+  { title: "कालसर्प दोष निवारण", path: "/kaal-sarp-dosh-puja" },
+  { title: "मंगल भात पूजा", path: "/mangal-bhat-puja" },
 ];
 
 // लोकल स्टोरेज हेल्पर फंक्शन्स (डायनेमिक डेटा के लिए)

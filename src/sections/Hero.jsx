@@ -100,6 +100,9 @@ const Hero = () => {
                 )}
 <h1 className="amita-bold text-3xl md:text-4xl mb-2 text-white drop-shadow-md">
   {content.mainHeading}
+  <span className="mt-2 block text-lg font-normal text-orange-100 md:text-2xl">
+    उज्जैन में मंगल भात पूजा और कालसर्प दोष पूजा
+  </span>
 </h1>
 
 <h2 className="amita-regular text-xl md:text-4xl text-white drop-shadow-md">

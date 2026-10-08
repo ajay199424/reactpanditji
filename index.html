@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
 
@@ -22,30 +22,25 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <!-- SEO fallback -->
-    <title>
-      Vedic Poojan | Mangal Bhat Puja & Kaal Sarp Dosh Puja in Ujjain
-    </title>
-
-    <meta
-      name="description"
-      content="Vedic Poojan provides Mangal Bhat Puja, Kaal Sarp Dosh Nivaran Puja, Rudrabhishek, Navgrah Shanti and traditional Vedic rituals in Ujjain, Madhya Pradesh."
-    />
-
-    <meta
-      name="robots"
-      content="index, follow, max-image-preview:large"
-    />
-
-    <link
-      rel="canonical"
-      href="https://vedikpoojan.com/"
-    />
+    <!--seo:start-->
+    <!--seo:end-->
   </head>
 
   <body>
     <div id="root"></div>
-
+    <noscript>
+      <!--seo-body:start-->
+      <!--seo-body:end-->
+    </noscript>
+    <script>
+      (function () {
+        var path = location.pathname || "";
+        if (path === "/admin" || path.indexOf("/admin/") === 0) {
+          var robots = document.querySelector('meta[name="robots"]');
+          if (robots) robots.setAttribute("content", "noindex, nofollow");
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

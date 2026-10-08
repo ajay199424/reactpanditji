@@ -105,6 +105,22 @@ const Navbar = () => {
               Services
             </button>
 
+            <Link
+              to="/mangal-bhat-puja"
+              onClick={() => setOpen(false)}
+              className="hidden xl:inline hover:text-yellow-400 transition"
+            >
+              Mangal Bhat
+            </Link>
+
+            <Link
+              to="/kaal-sarp-dosh-puja"
+              onClick={() => setOpen(false)}
+              className="hidden xl:inline hover:text-yellow-400 transition"
+            >
+              Kaal Sarp
+            </Link>
+
             {/* Gallery */}
             <button
               type="button"
@@ -214,6 +230,22 @@ const Navbar = () => {
               >
                 Services
               </button>
+
+              <Link
+                to="/mangal-bhat-puja"
+                onClick={() => setOpen(false)}
+                className="hover:text-yellow-400 transition"
+              >
+                Mangal Bhat Puja
+              </Link>
+
+              <Link
+                to="/kaal-sarp-dosh-puja"
+                onClick={() => setOpen(false)}
+                className="hover:text-yellow-400 transition"
+              >
+                Kaal Sarp Dosh Puja
+              </Link>
 
               {/* Gallery */}
               <button

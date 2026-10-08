@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { footerLinks, footerServices, getLiveFooterData } from "../data/footer";
 
 const iconMap = {
@@ -117,14 +118,14 @@ export default function Footer() {
   </h3>
 
   <div className="flex flex-col gap-4 mt-6">
-    {footerLinks.map((item, index) => (
-      <a
-        key={index}
-        href={item.path}
+    {footerLinks.map((item) => (
+      <Link
+        key={item.path}
+        to={item.path}
         className="text-[#f3d9b1] hover:text-saffron transition-all duration-300 relative w-fit text-sm md:text-base after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-saffron hover:after:w-full after:transition-all after:duration-500"
       >
         {item.title}
-      </a>
+      </Link>
     ))}
   </div>
 </nav>
@@ -136,15 +137,25 @@ export default function Footer() {
             </h3>
 
             <div className="flex flex-col gap-4 mt-6">
-              {footerServices.map((item, index) => (
-                <div
-                  key={index}
-                  className="text-[#f3d9b1] flex items-start gap-3 text-sm md:text-base group"
-                >
-                  <span className="text-saffron transition-transform group-hover:scale-125 duration-300">✦</span>
-                  <p className="group-hover:text-cream transition-colors duration-300">{item}</p>
-                </div>
-              ))}
+              {footerServices.map((item) => {
+                const row = (
+                  <>
+                    <span className="text-saffron transition-transform group-hover:scale-125 duration-300">✦</span>
+                    <span className="group-hover:text-cream transition-colors duration-300">{item.title}</span>
+                  </>
+                );
+                const className = "text-[#f3d9b1] flex items-start gap-3 text-sm md:text-base group";
+
+                return item.path ? (
+                  <Link key={item.path} to={item.path} className={className}>
+                    {row}
+                  </Link>
+                ) : (
+                  <div key={item.title} className={className}>
+                    {row}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
