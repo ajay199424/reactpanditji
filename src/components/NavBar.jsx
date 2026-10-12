@@ -72,7 +72,7 @@ const Navbar = () => {
             >
               ॐ
             </motion.span>{" "}
-            Vedic Poojanss
+            Vedic Poojan
           </Link>
 
           {/* Desktop Menu */}
