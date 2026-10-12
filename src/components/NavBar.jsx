@@ -104,7 +104,13 @@ const Navbar = () => {
             >
               Services
             </button>
-
+ <Link
+              to="/admin"
+              onClick={() => setOpen(false)}
+              className="hidden xl:inline hover:text-yellow-400 transition"
+            >
+              Login
+            </Link>
             <Link
               to="/mangal-bhat-puja"
               onClick={() => setOpen(false)}
